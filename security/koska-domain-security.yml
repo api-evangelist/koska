@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: koska.jp
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 10 19:43:52 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: vscribe.koska.jp
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 23 22:29:29 2026 GMT
+  hsts: false
+domains:
+- domain: koska.jp
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

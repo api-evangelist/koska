@@ -1,0 +1,30 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of KOSKA web hosts
+note: >-
+  KOSKA publishes no /.well-known/ discovery surface. Every standard document
+  was probed on both the corporate host (koska.jp) and the product host
+  (vscribe.koska.jp) and returned 404. Recorded so re-runs do not re-probe
+  blindly; absence is valid data.
+hosts:
+- host: https://koska.jp
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://vscribe.koska.jp
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /llms.txt
+    status: 200
+    file: ../llms/koska-llms.txt
+  - path: /robots.txt
+    status: 200
