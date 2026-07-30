@@ -1,19 +1,57 @@
 aid: koska
 name: Koska
-description: Koska is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  KOSKA Corporation (株式会社KOSKA) is a Tokyo-based manufacturing technology
+  company, founded in October 2018, that applies cost accounting and IoT to the
+  Japanese factory floor. Its flagship product GenKan (原価管理自動化サービス) automates
+  cost management for high-mix low-volume manufacturers: RFID and power sensors
+  installed on existing equipment capture work progress and consumption without
+  changing operator behavior, then make processing cost, material cost, and
+  electricity cost visible line by line, feeding real actual-cost figures and KPI
+  setting back to the shop floor and management. A second product, ながら記録
+  (Nagara Kiroku / "vScribe"), is an AI record-keeping app for manufacturing,
+  construction, and logistics sites — photograph a paper form and AI generates
+  the input form, then operators record hands-free by speaking, with the AI
+  parsing natural speech into structured records, inspections, and reports. KOSKA
+  is led by CEO Kenichiro Sone (Forbes 30 Under 30 Asia 2021) and advised by
+  Hiroshi Obata, former chair of the Japan Cost Accounting Association. As of
+  this profile the company publishes no public developer API, SDK, or developer
+  portal — it is a sensor-and-SaaS product company, not an API provider.
 url: https://raw.githubusercontent.com/api-evangelist/koska/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
-x-tier: stub
+x-tier: profiled
 x-tier-reason: portfolio-lead
+x-no-public-api: true
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
+image: https://koska.jp/static/b40c21d9df64d852e623c9c1daa4f44f/0a2f7/LOGO.png
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Manufacturing
+- Cost Management
+- Cost Accounting
+- Industrial IoT
+- IoT
+- RFID
+- Artificial Intelligence
+- Voice Recognition
+- Manufacturing Execution
+- Japan
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +59,30 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/koska-domain-security.yml
 - type: Website
   url: https://koska.jp
+- type: Product
+  name: GenKan — cost management automation
+  url: https://koska.jp
+- type: Product
+  name: ながら記録 (Nagara Kiroku) — AI hands-free record keeping
+  url: https://vscribe.koska.jp/
+- type: About
+  url: https://koska.jp/info/
+- type: Blog
+  url: https://vscribe.koska.jp/use-cases
+- type: News
+  url: https://koska.jp/news/
+- type: Support
+  url: https://koska.jp/#contact
+- type: PrivacyPolicy
+  url: https://koska.jp/policy/
+- type: LLMsTxt
+  url: llms/koska-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
