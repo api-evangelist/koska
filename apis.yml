@@ -36,7 +36,7 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 image: https://koska.jp/static/b40c21d9df64d852e623c9c1daa4f44f/0a2f7/LOGO.png
 created: '2026-07-17'
 modified: '2026-07-19'
